@@ -6,6 +6,7 @@
     <title>C.J.'s Web App Dashboard</title>
     <link href="css/dash.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/toggle-switch.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -27,20 +28,32 @@
 
             </div>
         </div>
-        <img src="images/me.jpg">
+        <img src="images/me.jpg" alt="profile picture">
         <h3>C.J. O'Leary</h3>
     </header>
     
     <nav>
-        <a><img src="icons/icon-dashboard.svg"></a>
-        <a><img src="icons/icon-members.svg"></a>
-        <a><img src="icons/icon-visits.svg"></a>
-        <a><img src="icons/icon-settings.svg"></a>
+        <a href="#"><img src="icons/icon-dashboard.svg" alt="dashboard"></a>
+        <a href="#"><img src="icons/icon-members.svg" alt="members"></a>
+        <a href="#"><img src="icons/icon-visits.svg" alt="visits"></a>
+        <a href="#"><img src="icons/icon-settings.svg" alt="settings"></a>
     </nav>
 
     <main>
-        
+        <div class="main-header">
+            <h2 class="headline">Dashboard</h2>
+            <div class="main-header-search">
+                <input type="search" placeholder="Search..." />
+            </div>
+        </div>
+
+        <!-- alert banner -->
+        <div class="alert" id="alert" >
+         <!-- JS will insert alert here -->
+        </div>
+
     </main>
-    <script type="text/javascript" src="dash.js"></script> 
+    <script type="text/javascript" src="js/dash.js"></script> 
+    
 </body>
 </html>
