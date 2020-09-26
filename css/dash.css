@@ -1,4 +1,6 @@
-/* Main */
+/* ================================= 
+  Base Element Styles
+==================================*/
 
 *, 
 *:before, 
@@ -7,3 +9,100 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  margin: 0 auto;
+  padding: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-areas: 
+    "header"
+    "nav"
+    "main";
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+nav a {
+  padding: 10px;
+}
+
+nav a img {
+  height: 2.5em;
+  width: 2.5em;
+}
+
+main {
+  grid-area: main;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================*/
+
+header h1 {
+  float: left;
+  margin-left: 5px;
+}
+
+.header-right {
+  float: right;
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+
+#icon-bell {
+  height: 2.5em;
+  width: 2.5em;
+  margin: auto 5px;
+}
+
+header img {
+  border-radius: 50%;
+  height: 2.5em;
+  width: 2.5em;
+  margin: auto 5px;
+}
+
+header h3 {
+  margin: auto 5px;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: row;
+}
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* ================================= 
+  Media Queries
+==================================*/
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
+}
