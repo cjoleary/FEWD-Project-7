@@ -120,6 +120,16 @@ header h3 {
     .main-header {
       margin: 0 10px;
     }
+
+    .main-content {
+      display: grid;
+      grid-template-columns: 50%;
+    }
+
+    .traffic, .social-stats {
+      grid-column: 1 / span 2;
+    }
+
 }
 
 @media (min-width: 1024px) {
