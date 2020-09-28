@@ -118,8 +118,10 @@ header h3 {
 }
 
 .social-image {
-  height: 25px;
-  width: 25px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #7c7ebc;
 }
 
 /* ---- Float clearfix ---- */
