@@ -20,13 +20,16 @@ body {
 
 header {
   grid-area: header;
+  background-color: #7c7ebc;
+  color: white;
 }
 
 nav {
   grid-area: nav;
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0;
+  background-color: #4d4c72;
 }
 
 nav a {
@@ -61,6 +64,7 @@ main {
 header h1 {
   float: left;
   margin-left: 10px;
+  font-weight: 200;
 }
 
 .header-right {
@@ -85,6 +89,7 @@ header img {
 
 header h3 {
   margin: auto 5px;
+  font-weight: 300;
 }
 
 .main-header {
