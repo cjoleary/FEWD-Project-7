@@ -98,6 +98,8 @@ header h3 {
   justify-content: space-between;
 }
 
+/* --- Social Stats Widget --- */
+
 .social-stats {
   display: flex;
   flex-direction: column;
@@ -106,9 +108,9 @@ header h3 {
 
 .social-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
   width: 100%;
   border: 1px solid lightgrey;
   border-radius: 5px;
@@ -124,6 +126,23 @@ header h3 {
   width: 60px;
   border-radius: 50%;
   background-color: #7c7ebc;
+}
+
+#twitter {
+  margin: 18px 0 0 16px;
+}
+
+#facebook {
+  margin: 11px 0 0 13px;
+}
+
+#google-plus {
+  margin: 16px 0 0 15px;
+}
+
+.social-text {
+  text-align: left;
+  margin-left: 20px;
 }
 
 .social-text p:nth-child(1) {
