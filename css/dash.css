@@ -100,6 +100,7 @@ header h3 {
 
 .social-stats {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -108,13 +109,14 @@ header h3 {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  width: calc(100% / 3);
-  border: 3px solid green;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  background-color: #fbfbfb;
 }
 
 .social-container:nth-child(even) {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 10px 0;
 }
 
 .social-image {
@@ -122,6 +124,19 @@ header h3 {
   width: 60px;
   border-radius: 50%;
   background-color: #7c7ebc;
+}
+
+.social-text p:nth-child(1) {
+  color: #7c7ebc;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.social-text p:nth-child(2) {
+  font-size: 36px;
+  font-weight: 200;
+  margin: 0;
 }
 
 /* ---- Float clearfix ---- */
@@ -168,6 +183,20 @@ header h3 {
 
     .mobile-users, .activity, .settings {
       grid-column: 2 / span 1;
+    }
+
+    .social-stats {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .social-container {
+      width: calc(100% / 3);
+    }
+
+    .social-container:nth-child(even) {
+      margin: 0 10px;
     }
 }
 
