@@ -40,6 +40,7 @@ nav a img {
 
 main {
   grid-area: main;
+  padding: 10px;
 }
 
 /* ================================= 
@@ -92,6 +93,30 @@ header h3 {
   justify-content: space-between;
 }
 
+.social-stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: calc(100% / 3);
+  border: 3px solid green;
+}
+
+.social-container:nth-child(even) {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.social-image {
+  height: 25px;
+  width: 25px;
+}
+
 /* ---- Float clearfix ---- */
 
 .clearfix::after {
@@ -126,7 +151,7 @@ header h3 {
       grid-template-columns: 50%;
     }
 
-    .traffic, .social-stats {
+    .traffic, .social {
       grid-column: 1 / span 2;
     }
 
