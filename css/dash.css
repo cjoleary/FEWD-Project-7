@@ -47,13 +47,18 @@ main {
   padding-bottom: 30px;
 }
 
-h3 {
-  margin-top: 5px;
+h2 {
+  letter-spacing: 1px;
 }
 
 h2,
 h3 {
   font-weight: 400;
+}
+
+h3 {
+  margin-top: 5px;
+  letter-spacing: .5px;
 }
 
 a {
@@ -76,7 +81,6 @@ a {
     "main";
 }
 
-.main-header,
 .traffic,
 .daily-traffic,
 .mobile-users,
@@ -127,14 +131,51 @@ header h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #fbfbfb;
+}
+
+.headline {
+  background-color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+.main-header-search {
+  padding: 12px 20px;
+}
+
+/* --- Form Element Styles --- */
+
+.main-header-search input {
+  background-color: white;
+}
+.message-container input,
+.message-container textarea,
+.settings select {
+  background-color: #fbfbfb;
+}
+
+.main-header-search input,
+.message-container input,
+.message-container textarea,
+.settings select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
 }
 
 /* --- Widget Border Styles --- */
+
+.headline {
+  border-right: 1px solid lightgrey;
+  border-bottom: 1px solid white;
+}
 
 .members {
   border-top: 1px solid lightgrey;
 }
 
+.main-header,
 .traffic,
 .daily-traffic,
 .mobile-users,
@@ -287,10 +328,6 @@ header h3 {
 .message-container input,
 .message-container textarea,
 .settings select {
-  background-color: #fbfbfb;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid lightgrey;
   margin-bottom: 15px;
 }
 
