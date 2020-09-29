@@ -141,7 +141,7 @@ header h3 {
 }
 
 .social-container:nth-child(even) {
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 .social-image {
@@ -193,7 +193,13 @@ header h3 {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 14px;
+  padding: 15px 0;
+}
+
+.members-container:nth-child(2),
+.members-container:nth-child(3),
+.members-container:nth-child(4) {
+  border-bottom: 1px solid lightgrey;
 }
 
 .members-container p:nth-last-child(1) {
@@ -211,6 +217,11 @@ header h3 {
   height: 3em;
   width: 3em;
   margin-right: 10px;
+}
+
+.members h3,
+.activty h3 {
+  margin: 14px 0 5px 0;
 }
 
 /* ---- Float clearfix ---- */
@@ -270,7 +281,7 @@ header h3 {
     }
 
     .social-container:nth-child(even) {
-      margin: 0 10px;
+      margin: 0 15px;
     }
 }
 
