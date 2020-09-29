@@ -71,9 +71,23 @@ a {
     "main";
 }
 
+.main-header,
+.traffic,
+.daily-traffic,
+.mobile-users,
+.social,
+.members,
+.activity,
+.message-user,
+.settings {
+  padding: 15px;
+}
+
+/* --- Header --- */
+
 header h1 {
   float: left;
-  margin-left: 10px;
+  margin-left: 15px;
   font-weight: 200;
 }
 
@@ -81,7 +95,7 @@ header h1 {
   float: right;
   display: flex;
   justify-content: space-between;
-  margin: 16px 5px;
+  margin: 16px 10px;
 }
 
 #icon-bell {
@@ -102,22 +116,27 @@ header h3 {
   font-weight: 300;
 }
 
+/* --- Headline & Search Bar --- */
+
 .main-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.main-header,
+/* --- Widget Border Styles --- */
+
+.members {
+  border-top: 1px solid lightgrey;
+}
+
 .traffic,
 .daily-traffic,
 .mobile-users,
-.social,
 .members,
 .activity,
-.message-user,
-.settings {
-  padding: 15px;
+.message-user {
+  border-bottom: 1px solid lightgrey;
 }
 
 /* --- Social Stats Widget --- */
@@ -182,14 +201,19 @@ header h3 {
   margin: 0;
 }
 
-/* --- New Members Widget --- */
+/* --- New Members / Recent Activity Widgets --- */
 
 .members {
   border-top: 1px solid lightgrey;
+}
+
+.members,
+.activity {
   border-bottom: 1px solid lightgrey;
 }
 
-.members-container {
+.members-container,
+.activity-container {
   text-align: left;
   display: flex;
   align-items: center;
@@ -197,7 +221,8 @@ header h3 {
   padding: 15px 0;
 }
 
-.members-info {
+.members-info,
+.activity-info {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -205,17 +230,22 @@ header h3 {
 
 .members-container:nth-child(2),
 .members-container:nth-child(3),
-.members-container:nth-child(4) {
+.members-container:nth-child(4),
+.activity-container:nth-child(2),
+.activity-container:nth-child(3),
+.activity-container:nth-child(4) {
   border-bottom: 1px solid lightgrey;
 }
 
-.members-container p:nth-last-child(1) {
-  font-weight: 800;
-}
-
-.members-text p {
+.members-text p,
+.activity-text p:nth-child(1) {
   margin: 0 0 5px 0;
   font-size: 14px;
+}
+
+.activity-text p:nth-child(2) {
+  margin: 0;
+  font-size: 12px;
 }
 
 .members-container img,
@@ -227,8 +257,57 @@ header h3 {
 }
 
 .members h3,
-.activty h3 {
+.activity h3 {
   margin: 14px 0 5px 0;
+}
+
+.activity-text span {
+  font-weight: 425;
+}
+
+.activity-container span:nth-child(2) {
+  font-size: 50px;
+  font-weight: 50;
+  color: #7c7ebc;
+  height: 37px;
+}
+
+/* --- Message User Widget --- */
+
+.message-user h3 {
+  margin-top: 0;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.message-container input,
+.message-container textarea {
+  background-color: #fbfbfb;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  margin-bottom: 15px;
+}
+
+.message-container textarea {
+  height: 100px;
+}
+
+.button-primary {
+  background-color: #7c7ebc;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  letter-spacing: .5px;
+}
+
+::placeholder {
+  color: lightgrey;
 }
 
 /* ---- Float clearfix ---- */
@@ -244,6 +323,9 @@ header h3 {
 ==================================*/
 
 @media (min-width: 768px) {
+  
+/* --- Grid Layout --- */
+
   .grid-container {
     grid-template-columns: 55px 1fr;
     grid-template-areas:
@@ -277,19 +359,33 @@ header h3 {
       grid-column: 2 / span 1;
     }
 
-    .social-stats {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
+/* --- Widget Border Styles --- */
 
-    .social-container {
-      width: calc(100% / 3);
-    }
+.daily-traffic,
+.members,
+.message-user {
+  border-right: 1px solid lightgrey;
+}
 
-    .social-container:nth-child(even) {
-      margin: 0 15px;
-    }
+.activity {
+  border-top: 1px solid lightgrey;
+}
+
+/* --- Social Stats Widget --- */
+
+  .social-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .social-container {
+    width: calc(100% / 3);
+  }
+
+  .social-container:nth-child(even) {
+    margin: 0 15px;
+  }
 }
 
 @media (min-width: 1024px) {
