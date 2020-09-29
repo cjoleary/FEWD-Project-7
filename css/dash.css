@@ -44,6 +44,7 @@ nav a img {
 
 main {
   grid-area: main;
+  padding-bottom: 30px;
 }
 
 h3 {
@@ -316,6 +317,11 @@ header h3 {
 }
 
 /* ---- Settings Widget ---- */
+
+.settings label {
+  display: flex;
+  justify-content: flex-start;
+}
 
 .settings select {
   width: 100%;
