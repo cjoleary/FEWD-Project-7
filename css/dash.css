@@ -157,8 +157,9 @@ header h3 {
 
 .main-header-search input {
   background-color: white;
-  width: 50%;
+  width: 65%;
 }
+
 .message-container input,
 .message-container textarea,
 .settings select {
@@ -447,6 +448,12 @@ header h3 {
 
 .message-user {
   border-bottom: none;
+}
+
+/* --- Headline & Search Bar --- */
+
+.main-header-search input {
+  width: 50%;
 }
 
 /* --- Social Stats Widget --- */
