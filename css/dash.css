@@ -46,6 +46,10 @@ main {
   grid-area: main;
 }
 
+h3 {
+  margin-top: 5px;
+}
+
 h2,
 h3 {
   font-weight: 400;
@@ -80,7 +84,7 @@ a {
 .activity,
 .message-user,
 .settings {
-  padding: 15px;
+  padding: 15px 20px;
 }
 
 /* --- Header --- */
@@ -258,7 +262,7 @@ header h3 {
 
 .members h3,
 .activity h3 {
-  margin: 14px 0 5px 0;
+  margin: 5px 0;
 }
 
 .activity-text span {
@@ -280,7 +284,8 @@ header h3 {
 }
 
 .message-container input,
-.message-container textarea {
+.message-container textarea,
+.settings select {
   background-color: #fbfbfb;
   padding: 10px;
   border-radius: 5px;
@@ -294,6 +299,10 @@ header h3 {
 
 .button-primary {
   background-color: #7c7ebc;
+}
+
+.button-primary,
+.button-disabled {
   color: white;
   padding: 15px;
   border: none;
@@ -304,6 +313,31 @@ header h3 {
 
 ::placeholder {
   color: lightgrey;
+}
+
+/* ---- Settings Widget ---- */
+
+.settings select {
+  width: 100%;
+  color: lightgrey;
+}
+
+.settings select:focus {
+  color: #666666;
+}
+
+.settings-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.settings button {
+  width: calc(100% / 2)
+}
+
+.button-disabled {
+  background-color: #b2b2b2;
+  margin-left: 20px;
 }
 
 /* ---- Float clearfix ---- */
