@@ -322,14 +322,14 @@ header h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 25px;
+  margin: 20px 0;
   width: 100%;
 }
 
 .settings select {
   width: 100%;
   color: lightgrey;
-  margin-top: 13.5px;
+  margin-top: 18px;
 }
 
 .settings select:focus {
