@@ -94,23 +94,29 @@ a {
 
 /* --- Header --- */
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 header h1 {
-  float: left;
   margin-left: 15px;
   font-weight: 200;
 }
 
 .header-right {
-  float: right;
   display: flex;
   justify-content: space-between;
   margin: 16px 10px;
 }
 
 #icon-bell {
-  height: 2.5em;
-  width: 2.5em;
+  height: 3.5em;
+  width: 3.5em;
   margin: auto 5px;
+  padding: 10px;
+  border-right: 1px solid #666666;
 }
 
 header img {
@@ -144,13 +150,14 @@ header h3 {
 .main-header-search {
   padding: 12px 20px;
   flex-grow: 2;
+  text-align: right;
 }
 
 /* --- Form Element Styles --- */
 
 .main-header-search input {
   background-color: white;
-  width: 100%;
+  width: 50%;
 }
 .message-container input,
 .message-container textarea,
@@ -387,14 +394,6 @@ header h3 {
 .button-disabled {
   background-color: #b2b2b2;
   margin-left: 20px;
-}
-
-/* ---- Float clearfix ---- */
-
-.clearfix::after {
-  content: " ";
-  display: table;
-  clear: both;
 }
 
 /* ================================= 
