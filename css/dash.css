@@ -132,6 +132,7 @@ header h3 {
   align-items: center;
   justify-content: space-between;
   background-color: #fbfbfb;
+  width: 100%;
 }
 
 .headline {
@@ -142,12 +143,14 @@ header h3 {
 
 .main-header-search {
   padding: 12px 20px;
+  flex-grow: 2;
 }
 
 /* --- Form Element Styles --- */
 
 .main-header-search input {
   background-color: white;
+  width: 100%;
 }
 .message-container input,
 .message-container textarea,
@@ -168,14 +171,13 @@ header h3 {
 
 .headline {
   border-right: 1px solid lightgrey;
-  border-bottom: 1px solid white;
 }
 
 .members {
   border-top: 1px solid lightgrey;
 }
 
-.main-header,
+.main-header-search,
 .traffic,
 .daily-traffic,
 .mobile-users,
@@ -415,16 +417,12 @@ header h3 {
       justify-content: flex-start;
     }
 
-    .main-header {
-      margin: 0 10px;
-    }
-
     .main-content {
       display: grid;
       grid-template-columns: 50%;
     }
 
-    .traffic, .social {
+    .main-header, .traffic, .social {
       grid-column: 1 / span 2;
     }
 
