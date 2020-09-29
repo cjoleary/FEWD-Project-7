@@ -322,13 +322,14 @@ header h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   width: 100%;
 }
 
 .settings select {
   width: 100%;
   color: lightgrey;
+  margin-top: 13.5px;
 }
 
 .settings select:focus {
@@ -408,6 +409,10 @@ header h3 {
 
 .activity {
   border-top: 1px solid lightgrey;
+}
+
+.message-user {
+  border-bottom: none;
 }
 
 /* --- Social Stats Widget --- */
