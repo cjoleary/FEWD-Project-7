@@ -44,7 +44,6 @@ nav a img {
 
 main {
   grid-area: main;
-  padding: 15px;
 }
 
 h2,
@@ -107,6 +106,18 @@ header h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.main-header,
+.traffic,
+.daily-traffic,
+.mobile-users,
+.social,
+.members,
+.activity,
+.message-user,
+.settings {
+  padding: 15px;
 }
 
 /* --- Social Stats Widget --- */
