@@ -275,6 +275,7 @@ header h3 {
   align-items: center;
   justify-content: space-between;
   padding: 15px 0;
+  height: 81px;
 }
 
 .members-info,
@@ -372,6 +373,10 @@ header h3 {
   align-items: center;
   margin: 20px 0;
   width: 100%;
+}
+
+.settings label strong {
+  flex-grow: 2;
 }
 
 .settings select {
