@@ -196,6 +196,24 @@ header h3 {
   text-align: right;
 }
 
+/* --- Alert Banner --- */
+
+.alert-banner {
+  text-align: center;
+  color: white;
+  background-color: #7377bf;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.alert-banner p {
+  margin: 0;
+}
+
 /* --- Traffic Widget --- */
 
 .traffic-header {
@@ -458,7 +476,7 @@ header h3 {
       grid-template-columns: 50%;
     }
 
-    .main-header, .traffic, .social {
+    #alert, .main-header, .traffic, .social {
       grid-column: 1 / span 2;
     }
 
