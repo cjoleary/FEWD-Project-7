@@ -213,6 +213,14 @@ header h3 {
 .alert-banner p {
   margin: 0;
 }
+.alert-banner p:last-child {
+  border: 1px solid white;
+  padding: 0 3.5px;
+}
+
+.alert-banner p:last-child:hover {
+  cursor: pointer;
+}
 
 /* --- Traffic Widget --- */
 
