@@ -59,6 +59,7 @@ h3 {
 h3 {
   margin-top: 5px;
   letter-spacing: .5px;
+  font-size: 13px;
 }
 
 a {
@@ -90,6 +91,48 @@ a {
 .message-user,
 .settings {
   padding: 15px 20px;
+}
+
+/* --- Form Element Styles --- */
+
+.main-header-search input {
+  background-color: white;
+  width: 70%;
+}
+
+.message-container input,
+.message-container textarea,
+.settings select {
+  background-color: #fbfbfb;
+}
+
+.main-header-search input,
+.message-container input,
+.message-container textarea,
+.settings select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+}
+
+/* --- Widget Border Styles --- */
+
+.headline {
+  border-right: 1px solid lightgrey;
+}
+
+.members {
+  border-top: 1px solid lightgrey;
+}
+
+.main-header-search,
+.traffic,
+.daily-traffic,
+.mobile-users,
+.members,
+.activity,
+.message-user {
+  border-bottom: 1px solid lightgrey;
 }
 
 /* --- Header --- */
@@ -153,46 +196,33 @@ header h3 {
   text-align: right;
 }
 
-/* --- Form Element Styles --- */
+/* --- Traffic Widget --- */
 
-.main-header-search input {
-  background-color: white;
-  width: 65%;
+.traffic-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.message-container input,
-.message-container textarea,
-.settings select {
-  background-color: #fbfbfb;
+.traffic-header h3 {
+  margin: 0;
 }
 
-.main-header-search input,
-.message-container input,
-.message-container textarea,
-.settings select {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid lightgrey;
+.traffic-nav {
+  padding: 0;
 }
 
-/* --- Widget Border Styles --- */
-
-.headline {
-  border-right: 1px solid lightgrey;
+.traffic-nav li {
+  list-style: none;
+  display: inline;
+  padding: 5px;
+  margin: 0 5px;
+  font-size: 11px;
 }
 
-.members {
-  border-top: 1px solid lightgrey;
-}
-
-.main-header-search,
-.traffic,
-.daily-traffic,
-.mobile-users,
-.members,
-.activity,
-.message-user {
-  border-bottom: 1px solid lightgrey;
+.traffic-nav li:last-child {
+  padding-right: 0;
+  margin-right: 0;
 }
 
 /* --- Social Stats Widget --- */
@@ -382,7 +412,7 @@ header h3 {
 .settings select {
   width: 100%;
   color: lightgrey;
-  margin-top: 18px;
+  margin-top: 17px;
 }
 
 .settings select:focus {
@@ -460,6 +490,14 @@ header h3 {
 
 .main-header-search input {
   width: 50%;
+}
+
+/* --- Traffic Widget --- */
+
+.traffic-nav li {
+  padding: 10px;
+  margin: 0 5px;
+  font-size: 12px;
 }
 
 /* --- Social Stats Widget --- */
