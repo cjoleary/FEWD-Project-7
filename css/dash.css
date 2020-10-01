@@ -162,10 +162,15 @@
   nav a {
     padding: 15px;
     opacity: 0.5;
+    transition: transform .2s ease;
+  }
+
+  nav a:hover {
+    transform: scale(1.1);
   }
 
   nav .selected {
-    padding: 15px 15px 12px;
+    padding: 15px 15px 11px;
     border-bottom: 3px solid #81c98f;
     border-radius: 3px;
     opacity: 1;
@@ -175,19 +180,14 @@
     transform: scale(1.1);
   }
 
-  nav img {
-    height: 2.2em;
-    width: 2.2em;
-    margin: 0 auto;
-    transition: transform .2s ease;
-  }
-
   nav img[alt="visits"]  {
     padding-left: 3.5px;
   }
 
-  nav img:hover {
-    transform: scale(1.1);
+  nav img {
+    height: 2.2em;
+    width: 2.2em;
+    margin: 0 auto;
   }
 
 /* ============================================= */
@@ -560,7 +560,7 @@
   }
 
   nav .selected {
-    padding: 15px 15px 15px 12px;
+    padding: 15px 15px 15px 11px;
     border-left: 3px solid #81c98f;
     border-bottom: none;
   }
