@@ -156,18 +156,23 @@
 
   nav a {
     padding: 10px;
+    opacity: 0.5;
+  }
+
+  nav .selected {
+    border-bottom: 3px solid #81c98f;
+    border-radius: 3px;
+    opacity: 1;
+  }
+
+  nav img {
+    height: 2.5em;
+    width: 2.5em;
     transition: transform .2s ease;
   }
 
-  nav a:hover {
+  nav img:hover {
     transform: scale(1.1);
-  }
-
-
-
-  nav a img {
-    height: 2.5em;
-    width: 2.5em;
   }
 
 /* ============================================= */
@@ -520,6 +525,13 @@
 
     .mobile-users, .activity, .settings {
       grid-column: 2 / span 1;
+    }
+
+/* --- Navigation --- */
+
+    nav .selected {
+      border-left: 3px solid #81c98f;
+      border-bottom: none;
     }
 
 /* --- Headline & Search Bar --- */
