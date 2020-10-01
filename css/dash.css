@@ -150,24 +150,31 @@
     grid-area: nav;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 0;
     background-color: #4d4c72;
   }
 
   nav a {
-    padding: 10px;
+    padding: 15px;
     opacity: 0.5;
   }
 
   nav .selected {
+    padding: 15px 15px 12px 15px;
     border-bottom: 3px solid #81c98f;
     border-radius: 3px;
     opacity: 1;
   }
 
+  nav .selected img {
+    transform: scale(1.1);
+  }
+
   nav img {
-    height: 2.5em;
-    width: 2.5em;
+    height: 2.2em;
+    width: 2.2em;
+    margin: 0 auto;
     transition: transform .2s ease;
   }
 
@@ -505,11 +512,6 @@
     "nav main";
     }
 
-    nav {
-      flex-direction: column;
-      justify-content: flex-start;
-    }
-
     .main-content {
       display: grid;
       grid-template-columns: 50%;
@@ -528,11 +530,31 @@
     }
 
 /* --- Navigation --- */
+  nav {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 
-    nav .selected {
-      border-left: 3px solid #81c98f;
-      border-bottom: none;
-    }
+  nav a {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    border-left: 4px solid #4d4c72;
+  }
+
+  nav a:first-of-type {
+    margin-top: 10px;
+  }
+
+  nav img {
+    height: 2em;
+    width: 2em;
+  }
+
+  nav .selected {
+    border-left: 3px solid #81c98f;
+    border-bottom: none;
+  }
 
 /* --- Headline & Search Bar --- */
 
