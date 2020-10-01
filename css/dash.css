@@ -19,6 +19,10 @@
     padding: 0;
   }
 
+  canvas {
+    max-width: 100%;
+  }
+
   a {
     text-decoration: none;
     color: #7c7ebc;
@@ -161,7 +165,7 @@
   }
 
   nav .selected {
-    padding: 15px 15px 12px 15px;
+    padding: 15px 15px 12px;
     border-bottom: 3px solid #81c98f;
     border-radius: 3px;
     opacity: 1;
@@ -176,6 +180,10 @@
     width: 2.2em;
     margin: 0 auto;
     transition: transform .2s ease;
+  }
+
+  nav img[alt="visits"]  {
+    padding-left: 3.5px;
   }
 
   nav img:hover {
@@ -552,6 +560,7 @@
   }
 
   nav .selected {
+    padding: 15px 15px 15px 12px;
     border-left: 3px solid #81c98f;
     border-bottom: none;
   }
