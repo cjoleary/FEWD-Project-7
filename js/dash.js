@@ -20,8 +20,9 @@ const alertBanner = document.getElementById("alert");
     });
 
 // traffic line graph
-let trafficCanvas = document.getElementById("trafficChart");
+const trafficCanvas = document.getElementById("trafficChart");
 
+    // data for traffic line graph
     let trafficData = {
         labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
         datasets: [{
@@ -48,8 +49,79 @@ let trafficCanvas = document.getElementById("trafficChart");
         }
     };
 
+    // create the chart
     let trafficChart = new Chart(trafficCanvas, {
         type: 'line',
         data: trafficData,
         options: trafficOptions
+    });
+
+// daily traffic bar graph
+const dailyCanvas = document.getElementById("dailyChart");
+
+    // data for daily traffic bar chart
+    const dailyData = {
+        labels: ["S", "M", "T", "W", "T", "F", "S"],
+        datasets: [{
+            label: '# of Hits',
+            data: [75, 115, 175, 125, 225, 200, 100],
+            backgroundColor: '#7477BF',
+            borderWidth: 1
+        }]
+    };
+
+    const dailyOptions = {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        },
+        legend : {
+            display: false
+        }
+    }
+
+    // create the chart
+    let dailyChart = new Chart(dailyCanvas, {
+        type: 'bar',
+        data: dailyData,
+        options: dailyOptions
+    });
+
+// mobile users doughnut chart
+const mobileCanvas = document.getElementById("mobileChart");
+
+    // data for mobile users chart
+    const mobileData = {
+        labels: ["Desktop", "Tablet", "Phones"],
+        datasets: [{
+            label: '# of Users',
+            data: [2000, 550, 500],
+            borderWidth: 0,
+            backgroundColor: [
+                '#7477BF',
+                '#78CF82',
+                '#51B6C8'
+            ]
+        }]
+    };
+
+    // chart legend
+    const mobileOptions = {
+        legend: {
+            position: 'right',
+            labels: {
+                boxWidth: 20,
+                fontStyle: 'bold'
+            }
+        }
+    }
+
+    // create the chart
+    let mobileChart = new Chart(mobileCanvas, {
+        type: 'doughnut',
+        data: mobileData,
+        options: mobileOptions
     });
