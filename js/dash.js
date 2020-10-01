@@ -15,7 +15,7 @@ const alertBanner = document.getElementById("alert");
     alertBanner.addEventListener('click', e => {
         const element = e.target;
         if (element.classList.contains("alert-banner-close")) {
-            setTimeout( function () {alertBanner.style.display = "none"}, 200);
+            alertBanner.style.display = "none";
         }
     });
 
