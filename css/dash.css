@@ -403,6 +403,10 @@ header h3 {
   height: 100px;
 }
 
+.message-user button {
+  margin-bottom: 5px;
+}
+
 .button-primary {
   background-color: #7c7ebc;
 }
