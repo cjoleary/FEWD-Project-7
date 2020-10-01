@@ -423,11 +423,10 @@
     .activity-container span:nth-child(2) {
       font-size: 35px;
       font-weight: 50;
-      color: #7c7ebc;
       height: 37px;
       margin-left: 5px;
     }
-
+    
   /* --- Message User Widget --- */
 
     .message-container {
