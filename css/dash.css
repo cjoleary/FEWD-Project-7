@@ -223,16 +223,7 @@
     }
 
     #notification-items {
-      padding: 5px;
-    }
-
-    #notification-items {
-      transition: border .2s ease;
-    }
-
-    #notification-items:hover {
-      border-right: 3px solid #81c98f;
-      border-radius: 2px;
+      padding: 10px;
     }
 
     .notifications-close {
