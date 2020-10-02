@@ -25,7 +25,7 @@
 
   a {
     text-decoration: none;
-    color: #7c7ebc;
+    color: #7477bf;
   }
 
 /* ============================================= */
@@ -68,7 +68,7 @@
   }
 
   .button-primary {
-    background-color: #7c7ebc;
+    background-color: #7477bf;
   }
 
   .button-primary,
@@ -147,7 +147,7 @@
 
   header {
     grid-area: header;
-    background-color: #7c7ebc;
+    background-color: #7477bf;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -381,7 +381,7 @@
       height: 60px;
       width: 60px;
       border-radius: 50%;
-      background-color: #7c7ebc;
+      background-color: #7477bf;
     }
 
     #twitter {
@@ -402,7 +402,7 @@
     }
 
     .social-text p:nth-child(1) {
-      color: #7c7ebc;
+      color: #7477bf;
       font-size: 16px;
       font-weight: 500;
       letter-spacing: 1px;
