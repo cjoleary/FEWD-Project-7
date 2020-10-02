@@ -163,9 +163,24 @@
   #icon-bell {
     height: 3.5em;
     width: 3.5em;
-    margin: auto 5px;
+    margin: auto;
     padding: 10px;
-    border-right: 1px solid #666666;
+  }
+
+  #icon-bell {
+    transition: transform .3s ease;
+  }
+
+  #icon-bell:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+
+  #user-info {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+    border-left: 1px solid #666666;
   }
 
   header img {
