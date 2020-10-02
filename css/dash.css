@@ -160,12 +160,6 @@
     margin: 16px 10px;
   }
 
-  /* #bell {
-    height: 18px;
-    width: 18px;
-    margin: 6px 0 0 6px;
-  } */
-
   #icon-bell {
     height: 3.5em;
     width: 3.5em;
@@ -205,6 +199,33 @@
     margin: auto 5px;
     font-weight: 300;
   }
+
+  /* --- Notifications --- */
+
+    #notifications {
+      background-color: white;
+      color: #7477bf;
+      border-radius: 3px;
+      z-index: 1000;
+    }
+
+    #notifications-list {
+      margin: 0 auto;
+      list-style: none;
+    }
+
+    #notifications-list,
+    #notifications-list li {
+      padding: 5px;
+    }
+
+    .notifications-close {
+      padding-right: 5px;
+    }
+
+    .notifications-close:hover {
+      cursor: pointer;
+    }
 
 /* ============================================= */
 /*              Navigation                       */
@@ -315,12 +336,12 @@
     .alert-banner p {
       margin: 0;
     }
-    .alert-banner p:last-child {
+    .alert-banner-close {
       border: 1px solid white;
       padding: 0 3.5px;
     }
 
-    .alert-banner p:last-child:hover {
+    .alert-banner-close:hover {
       cursor: pointer;
     }
 
