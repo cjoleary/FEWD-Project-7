@@ -651,3 +651,13 @@
     margin: 0 15px;
   }
 }
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 14px;
+  }
+
+  .settings select {
+    margin-top: 10px;
+  }
+}
