@@ -20,11 +20,30 @@ const alertBanner = document.getElementById("alert");
     });
 
 // notification pop up menu
+    const notifications = document.getElementById("notifications");
+    const notificationClose = document.querySelectorAll('.notifications-close');
+    const badge = document.getElementById('badge');
+
     // when the user clicks the bell, toggle between showing the notification menu
     function myFunction() {
-        document.getElementById("notifications").classList.toggle("show");
-        document.getElementById("notifications").classList.toggle("hide");
+        notifications.classList.toggle("show");
+        notifications.classList.toggle("hide");
     }
+
+    // close individual notifications
+    notificationClose.forEach( item => {
+        item.addEventListener( 'click', (e) => {
+            let notificationItems = document.querySelectorAll('#notification-items');
+            for (let i = 0; i < notificationItems.length; i++) {
+                    e.target.parentNode.remove();
+            }
+            if ( notificationItems.length < 2 ) {
+                notifications.style.display = "none";
+                badge.style.opacity = "0";
+            }
+            console.log(notificationItems.length)
+        })
+    });
 
 // traffic line graph
 const trafficCanvas = document.getElementById("trafficChart");
