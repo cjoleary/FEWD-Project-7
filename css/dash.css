@@ -211,11 +211,11 @@
     }
 
     #notifications-list {
+      padding: 0;
       margin: 0 auto;
       list-style: none;
     }
 
-    #notifications-list,
     #notification-items {
       padding: 5px;
     }
