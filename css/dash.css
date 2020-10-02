@@ -169,7 +169,7 @@
   #icon-bell {
     height: 3.5em;
     width: 3.5em;
-    margin-bottom: 6px;
+    margin: 0 8px 8px 0;
     padding: 12px;
     transition: transform .3s ease;
   }
@@ -190,7 +190,7 @@
   #user-info {
     display: flex;
     justify-content: space-between;
-    padding-left: 5px;
+    padding-left: 10px;
     border-left: 1px solid #666666;
   }
 
