@@ -683,8 +683,7 @@
 }
 
 @media (min-width: 1024px) {
-  header,
-  main {
+  .main-content {
     font-size: 14px;
   }
 
