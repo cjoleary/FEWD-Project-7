@@ -19,6 +19,13 @@ const alertBanner = document.getElementById("alert");
         }
     });
 
+// notification pop up menu
+    // when the user clicks the bell, toggle between showing the notification menu
+    function myFunction() {
+        document.getElementById("notifications").classList.toggle("show");
+        document.getElementById("notifications").classList.toggle("hide");
+    }
+
 // traffic line graph
 const trafficCanvas = document.getElementById("trafficChart");
 
