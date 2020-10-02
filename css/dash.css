@@ -168,7 +168,8 @@
     transition: transform .3s ease;
   }
 
-  #icon-bell:hover {
+  #icon-bell:hover,
+  #icon-bell:focus {
     cursor: pointer;
     transform: scale(1.2);
   }
