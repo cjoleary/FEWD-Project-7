@@ -179,7 +179,7 @@
     transform: scale(1.2);
   }
 
-  #notifications {
+  #badge {
     border-radius: 50%;
     background: #81c98f;
     width: 6px;
