@@ -231,7 +231,11 @@
     }
 
     .notifications-close {
-      padding-right: 5px;
+      padding: 0 3.5px;
+      margin-right: 5px;
+      background-color: white;
+      border: 1px solid #7477bf;
+      border-radius: 2px;
     }
 
     .notifications-close:hover {
