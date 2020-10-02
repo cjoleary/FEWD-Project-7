@@ -219,6 +219,15 @@
       padding: 5px;
     }
 
+    #notifications-list li {
+      transition: border .2s ease;
+    }
+
+    #notifications-list li:hover {
+      border-right: 3px solid #81c98f;
+      border-radius: 2px;
+    }
+
     .notifications-close {
       padding-right: 5px;
     }
