@@ -653,7 +653,8 @@
 }
 
 @media (min-width: 1024px) {
-  body {
+  header,
+  main {
     font-size: 14px;
   }
 
