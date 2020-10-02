@@ -160,20 +160,31 @@
     margin: 16px 10px;
   }
 
+  /* #bell {
+    height: 18px;
+    width: 18px;
+    margin: 6px 0 0 6px;
+  } */
+
   #icon-bell {
     height: 3.5em;
     width: 3.5em;
-    margin: auto;
+    margin-bottom: 6px;
     padding: 12px;
-  }
-
-  #icon-bell {
     transition: transform .3s ease;
   }
 
   #icon-bell:hover {
     cursor: pointer;
     transform: scale(1.2);
+  }
+
+  #notifications {
+    border-radius: 50%;
+    background: #81c98f;
+    width: 6px;
+    height: 6px;
+    margin-left: 15px;
   }
 
   #user-info {
