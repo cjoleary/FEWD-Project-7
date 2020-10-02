@@ -58,7 +58,7 @@
 
   button {
     opacity: .7;
-    transition: opacity .2s ease;
+    transition: opacity .3s ease;
   }
 
   button:hover,
@@ -583,6 +583,11 @@
 
     .settings button {
       width: calc(100% / 2)
+    }
+
+    .switch-ios.switch-light > span:hover,
+    .settings select:hover {
+      cursor: pointer;
     }
 
 /* ================================= 
