@@ -204,16 +204,20 @@
   /* --- Notifications --- */
 
     #notifications {
-      background-color: white;
-      color: #7477bf;
-      border-radius: 3px;
-      z-index: 1000;
+      position: relative;
+      width: 100%;
     }
 
     #notifications-list {
+      background-color: white;
+      color: #7477bf;
+      border-radius: 3px;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+      position: absolute;
       padding: 0;
       margin: 0 auto;
       list-style: none;
+      z-index: 1000;
     }
 
     #notification-items {

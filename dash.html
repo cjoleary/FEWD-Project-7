@@ -14,12 +14,6 @@
     <header>
         <h1><b>Your</b>App&trade;</h1>
         <div class="header-right">
-            <div id="notifications" class="hide">
-                <ul id="notifications-list">
-                    <li id="notification-items"><button class="notifications-close">x</button> <strong>4</strong> new members joined on 9/25/20</li>
-                    <li id="notification-items"><button class="notifications-close">x</button> Your password is set to expire in <strong>10 days</strong></li>
-                </ul>
-            </div>
             <div onclick="myFunction()" id="icon-bell">
                 <div id="badge">
 
@@ -43,7 +37,7 @@
             </div>
         </div>
     </header>
-    
+
     <nav>
         <a href="#" class="selected"><img src="icons/icon-dashboard.svg" alt="dashboard"></a>
         <a href="#"><img src="icons/icon-members.svg" alt="members"></a>
@@ -52,6 +46,13 @@
     </nav>
 
     <main class="main-content">
+        <div id="notifications" class="hide">
+            <ul id="notifications-list">
+                <li id="notification-items"><button class="notifications-close">X</button> <strong>4</strong> new members joined on 9/25/20</li>
+                <li id="notification-items"><button class="notifications-close">X</button> Your password is set to expire in <strong>10 days</strong></li>
+            </ul>
+        </div>
+        
         <div class="main-header">
             <h2 class="headline">Dashboard</h2>
             <div class="main-header-search">
@@ -63,6 +64,7 @@
         <div class="alert" id="alert" >
          <!-- JS will insert alert here -->
         </div>
+
 
         <!-- line graph charts -->
         <section class="traffic">
