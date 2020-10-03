@@ -190,18 +190,18 @@ const send = document.getElementById("send");
             currentFocus = -1;
             /*create a DIV element that will contain the items (values):*/
             a = document.createElement("DIV");
-            a.setAttribute("id", this.id + "autocomplete-list");
+            a.setAttribute("id", "autocomplete-list");
             a.setAttribute("class", "autocompleteItems");
             /*append the DIV element as a child of the autocomplete container:*/
             this.parentNode.appendChild(a);
             /*for each item in the array...*/
             for (i = 0; i < arr.length; i++) {
               /*check if the item starts with the same letters as the text field value:*/
-              if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+              if (arr[i].toLowerCase().indexOf(val) > -1 || arr[i].toUpperCase().indexOf(val) > -1) {
                 /*create a DIV element for each matching element:*/
                 b = document.createElement("DIV");
-                /*make the matching letters bold:*/
-                b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+                /*display matches*/
+                b.innerHTML =  arr[i].substr(0, val.length);
                 b.innerHTML += arr[i].substr(val.length);
                 /*insert a input field that will hold the current array item's value:*/
                 b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
@@ -220,7 +220,7 @@ const send = document.getElementById("send");
 
         /*execute a function presses a key on the keyboard:*/
         inp.addEventListener("keydown", function(e) {
-            var x = document.getElementById(this.id + "autocomplete-list");
+            var x = document.getElementById( "autocomplete-list");
             if (x) x = x.getElementsByTagName("div");
             if (e.keyCode == 40) {
               /*If the arrow DOWN key is pressed,
