@@ -217,6 +217,7 @@ const send = document.getElementById("send");
               }
             }
         });
+
         /*execute a function presses a key on the keyboard:*/
         inp.addEventListener("keydown", function(e) {
             var x = document.getElementById(this.id + "autocomplete-list");
@@ -265,14 +266,14 @@ const send = document.getElementById("send");
           for (var i = 0; i < x.length; i++) {
             if (elmnt != x[i] && elmnt != inp) {
             x[i].parentNode.removeChild(x[i]);
+            }
           }
         }
-      }
-      /*execute a function when someone clicks in the document:*/
-      document.addEventListener("click", function (e) {
-          closeAllLists(e.target);
-      });
-      }
+        /*execute a function when someone clicks in the document:*/
+        document.addEventListener("click", function (e) {
+            closeAllLists(e.target);
+        });
+    }
 
-      // Pass the users array as the second parameter of the autocomplete function
-      autocomplete(userField, users);
+    // Pass the users array as the second parameter of the autocomplete function
+    autocomplete(userField, users);
