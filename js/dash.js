@@ -21,6 +21,7 @@ const alertBanner = document.getElementById("alert");
 
 // notification pop up menu
     const notifications = document.getElementById("notifications");
+    const notificationsList = document.getElementById("notifications-list");
     const notificationClose = document.querySelectorAll('.notifications-close');
     const badge = document.getElementById('badge');
 
@@ -38,7 +39,7 @@ const alertBanner = document.getElementById("alert");
                     e.target.parentNode.remove();
             }
             if ( notificationItems.length < 2 ) {
-                notifications.style.display = "none";
+                notificationsList.innerHTML = `<li id="notification-items">No new notifications</li>`;
                 badge.style.opacity = "0";
             }
             console.log(notificationItems.length)
