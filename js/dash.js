@@ -50,14 +50,65 @@ const alertBanner = document.getElementById("alert");
 const trafficCanvas = document.getElementById("trafficChart");
 
     // data for traffic line graph
-    let trafficData = {
-        labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
-        datasets: [{
-            data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500, 2500],
-            backgroundColor: 'rgba(116, 119, 191, .3)',
-            borderWidth: 1,
-        }]
-    };
+        // Hourly
+        let hourlyData = {
+            labels: ["00:00", "01:00", "02:00", "03:00", "04:00", "05:00", "06:00", "07:00", "08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00", "22:00", "23:00"],
+            datasets: [{
+                data: [1, 0, 1, 1.5, 3, 7, 9, 13, 8, 26, 25, 35.5, 50, 35, 23, 23, 15, 40, 50, 60, 45.5, 20, 6, 4],
+                backgroundColor: 'rgba(116, 119, 191, .3)',
+                borderWidth: 1,
+                lineTension: 0,
+                pointRadius: 5,
+                pointBackgroundColor: '#fff',
+                pointBorderColor: '#4d4c72',
+                borderColor: '#7477bf'
+            }]
+        };
+
+        // Daily
+        let dayData = {
+            labels: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+            datasets: [{
+                data: [400, 225, 250, 200, 300, 350, 500],
+                backgroundColor: 'rgba(116, 119, 191, .3)',
+                borderWidth: 1,
+                lineTension: 0,
+                pointRadius: 5,
+                pointBackgroundColor: '#fff',
+                pointBorderColor: '#4d4c72',
+                borderColor: '#7477bf'
+            }]
+        };
+
+        // Weekly
+        let weeklyData = {
+            labels: ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7", "Week 8",],
+            datasets: [{
+                data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 2250],
+                backgroundColor: 'rgba(116, 119, 191, .3)',
+                borderWidth: 1,
+                lineTension: 0,
+                pointRadius: 5,
+                pointBackgroundColor: '#fff',
+                pointBorderColor: '#4d4c72',
+                borderColor: '#7477bf'
+            }]
+        };
+
+        // Monthly
+        let monthlyData = {
+            labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", ],
+            datasets: [{
+                data: [3200, 2800, 3500, 4200, 3750, 3250, 4000, 3500, 4200, 4750, 5000, 5175],
+                backgroundColor: 'rgba(116, 119, 191, .3)',
+                borderWidth: 1,
+                lineTension: 0,
+                pointRadius: 5,
+                pointBackgroundColor: '#fff',
+                pointBorderColor: '#4d4c72',
+                borderColor: '#7477bf'
+            }]
+        };
 
     let trafficOptions = {
         aspectRatio: 2.5,
@@ -79,7 +130,7 @@ const trafficCanvas = document.getElementById("trafficChart");
     // create the chart
     let trafficChart = new Chart(trafficCanvas, {
         type: 'line',
-        data: trafficData,
+        data: monthlyData,
         options: trafficOptions
     });
 
