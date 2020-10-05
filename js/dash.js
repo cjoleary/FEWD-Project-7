@@ -276,3 +276,57 @@ const send = document.getElementById("send");
 
     // Pass the users array as the second parameter of the autocomplete function
     autocomplete(userField, users);
+
+// use local storage to save settings in settings widget
+const switchEmail = document.getElementById("switchEmail");
+const switchPublic = document.getElementById("switchPublic");
+const timezone = document.getElementById("timezone");
+
+const loadSettings = () => {
+    const checkedEmail = localStorage.getItem('checkedEmail');
+    if (checkedEmail !== true) {
+      switchEmail.checked = (checkedEmail === 'true');
+    } else {
+      switchEmail.checked = (checkedEmail === 'false');
+    }
+    const checkedPublic = localStorage.getItem('checkedPublic');
+    if (checkedPublic !== true) {
+      switchPublic.checked = (checkedPublic === 'true');
+    } else {
+      switchPublic.checked = (checkedPublic === 'false');
+    }
+    timezone.selectedIndex = localStorage.getItem('savedTimezone');
+  }
+  
+  function testStorage() {
+     const test = 'test';
+       try {
+         localStorage.setItem(test, test);
+         localStorage.removeItem(test);
+         return true;
+       } catch(e) {
+         return false;
+       }
+    }
+  
+    if(testStorage() === true) {
+    save.addEventListener("click", () => {
+      if (timezone.selectedIndex === 0) {
+        alert("Select a Timezone");
+    } else {
+        localStorage.setItem('checkedEmail', switchEmail.checked);
+        localStorage.setItem('checkedPublic', switchPublic.checked);
+        localStorage.setItem('savedTimezone', timezone.selectedIndex);
+        alert("Your settings have been saved"); 
+      }
+    });
+  
+    cancel.addEventListener("click", () => {
+      localStorage.setItem('checkedEmail', switchEmail.checked = false)
+      localStorage.setItem('checkedPublic', switchPublic.checked = false)
+      localStorage.setItem('savedTimezone', timezone.selectedIndex = 0);
+      alert("Your settings have been cancelled"); 
+    });
+  
+    loadSettings();
+  }
