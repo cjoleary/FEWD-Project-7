@@ -694,6 +694,12 @@
     width: 50%;
   }
 
+/* --- Alert Banner --- */
+
+.alert-banner-close {
+  font-size: 12px;
+}
+
 /* --- Widget Border Styles --- */
 
   .daily-traffic,
