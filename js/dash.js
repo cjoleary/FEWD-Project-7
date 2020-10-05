@@ -48,6 +48,7 @@ const alertBanner = document.getElementById("alert");
 
 // traffic line graph
 const trafficCanvas = document.getElementById("trafficChart");
+const trafficNav = document.querySelector(".traffic-nav");
 
     // data for traffic line graph
         // Hourly
@@ -133,6 +134,57 @@ const trafficCanvas = document.getElementById("trafficChart");
         data: hourlyData,
         options: trafficOptions
     });
+
+    // change chart when user clicks a traffic nav li
+    const hourly = document.querySelector("#hourly");
+    const daily = document.querySelector("#daily");
+    const weekly = document.querySelector("#weekly");
+    const monthly = document.querySelector("#monthly");
+
+    trafficNav.addEventListener("click", (e) => {
+        let chosenTime = e.target.innerHTML;
+        if (chosenTime === "Hourly") {
+          let trafficChart = new Chart(trafficCanvas, {
+            type: "line",
+            data: hourlyData,
+            options: trafficOptions,
+          });
+          hourly.classList = "active";
+          daily.classList = "";
+          weekly.classList = "";
+          monthly.classList = "";
+        } else if (chosenTime === "Daily") {
+          let trafficChart = new Chart(trafficCanvas, {
+            type: "line",
+            data: dayData,
+            options: trafficOptions,
+          });
+          hourly.classList = "";
+          daily.classList = "active";
+          weekly.classList = "";
+          monthly.classList = "";
+        } else if (chosenTime === "Weekly") {
+          let trafficChart = new Chart(trafficCanvas, {
+            type: "line",
+            data: weeklyData,
+            options: trafficOptions,
+          });
+          hourly.classList = "";
+          daily.classList = "";
+          weekly.classList = "active";
+          monthly.classList = "";
+        } else if (chosenTime === "Monthly") {
+          let trafficChart = new Chart(trafficCanvas, {
+            type: "line",
+            data: monthlyData,
+            options: trafficOptions,
+          });
+          hourly.classList = "";
+          daily.classList = "";
+          weekly.classList = "";
+          monthly.classList = "active";
+        }
+      });
 
 // daily traffic bar graph
 const dailyCanvas = document.getElementById("dailyChart");
