@@ -69,7 +69,7 @@ const trafficCanvas = document.getElementById("trafficChart");
         let dayData = {
             labels: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
             datasets: [{
-                data: [400, 225, 250, 200, 300, 350, 500],
+                data: [75, 115, 175, 125, 225, 200, 100],
                 backgroundColor: 'rgba(116, 119, 191, .3)',
                 borderWidth: 1,
                 lineTension: 0,
@@ -130,7 +130,7 @@ const trafficCanvas = document.getElementById("trafficChart");
     // create the chart
     let trafficChart = new Chart(trafficCanvas, {
         type: 'line',
-        data: monthlyData,
+        data: hourlyData,
         options: trafficOptions
     });
 
