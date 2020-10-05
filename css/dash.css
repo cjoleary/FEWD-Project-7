@@ -384,13 +384,26 @@
       list-style: none;
       display: inline;
       padding: 5px;
-      margin: 0 5px;
+      margin: 0 2.5px;
       font-size: 11px;
+      letter-spacing: 0.5px;
+    }
+
+    .traffic-nav li:hover {
+      cursor: pointer;
+      font-weight: bold;
     }
 
     .traffic-nav li:last-child {
       padding-right: 0;
       margin-right: 0;
+    }
+
+    .active {
+      color: #fff;
+      background-color: #81c98f;
+      font-weight: bold;
+      border-radius: 20px;
     }
 
   /* --- Social Stats Widget --- */
@@ -719,11 +732,14 @@
 /* --- Traffic Widget --- */
 
   .traffic-nav li {
-    padding: 10px;
+    padding: 5px 10px;
     margin: 0 5px;
     font-size: 12px;
   }
 
+  .traffic-nav li:last-child {
+    padding-right: 10px;
+  }
 /* --- Social Stats Widget --- */
 
   .social-stats {
@@ -744,6 +760,10 @@
 @media (min-width: 1024px) {
   .main-content {
     font-size: 14px;
+  }
+
+  .traffic-nav li:last-child {
+    margin-right: 5px;
   }
 
   .settings select {
