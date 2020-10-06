@@ -28,6 +28,19 @@
     color: #7477bf;
   }
 
+  button:hover,
+  button:active,
+  #icon-bell:hover,
+  #icon-bell:focus,
+  .notifications-close:hover, 
+  .alert-banner-close:hover,
+  .traffic-nav li:hover,
+  .autocompleteItems div,
+  .switch-ios.switch-light > span:hover,
+  .settings select:hover {
+    cursor: pointer;
+  }
+
 /* ============================================= */
 /*              Typography                       */
 /* ============================================= */
@@ -63,7 +76,6 @@
 
   button:hover,
   button:active {
-    cursor: pointer;
     opacity: 1;
   }
 
@@ -170,7 +182,6 @@
 
   #icon-bell:hover,
   #icon-bell:focus {
-    cursor: pointer;
     transform: scale(1.2);
   }
 
@@ -232,10 +243,6 @@
       background-color: white;
       border: 1px solid #7477bf;
       border-radius: 2px;
-    }
-
-    .notifications-close:hover {
-      cursor: pointer;
     }
 
     .show {
@@ -360,10 +367,6 @@
       padding: 0 3.5px;
     }
 
-    .alert-banner-close:hover {
-      cursor: pointer;
-    }
-
   /* --- Traffic Widget --- */
 
     .traffic-header {
@@ -390,7 +393,6 @@
     }
 
     .traffic-nav li:hover {
-      cursor: pointer;
       font-weight: bold;
     }
 
@@ -589,16 +591,15 @@
       }
       .autocompleteItems div {
         padding: 8px;
-        cursor: pointer;
         border-bottom: 1px solid #d4d4d4;
       }
-      .autocompleteItems div:hover {
+      .autocompleteItems div:hover,
+      .autocompleteActive {
         /*when hovering an item:*/
         background-color: #81c98f;
       }
       .autocompleteActive {
         /*when navigating through the items using the arrow keys:*/
-        background-color: #81c98f;
         color: #ffffff;
       }
 
@@ -633,11 +634,6 @@
 
     .settings button {
       width: calc(100% / 2)
-    }
-
-    .switch-ios.switch-light > span:hover,
-    .settings select:hover {
-      cursor: pointer;
     }
 
 /* ================================= 
