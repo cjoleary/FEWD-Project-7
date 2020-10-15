@@ -518,6 +518,10 @@
       font-size: 14px;
     }
 
+    .members-text a:hover {
+      text-decoration: underline;
+    }
+
     .activity-text p:nth-child(2) {
       margin: 0;
       font-size: 12px;
