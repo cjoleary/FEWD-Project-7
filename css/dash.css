@@ -436,6 +436,12 @@
       width: 60px;
       border-radius: 50%;
       background-color: #7477bf;
+      opacity: 0.75;
+      transition: opacity .3s ease;
+    }
+
+    .social-image:hover {
+      opacity: 1;
     }
 
     #twitter {
