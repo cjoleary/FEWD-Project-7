@@ -20,16 +20,25 @@ const alertBanner = document.getElementById("alert");
     });
 
 // notification pop up menu
+    const bell = document.getElementById("icon-bell");
     const notifications = document.getElementById("notifications");
     const notificationsList = document.getElementById("notifications-list");
     const notificationClose = document.querySelectorAll('.notifications-close');
     const badge = document.getElementById('badge');
 
     // when the user clicks the bell, toggle between showing the notification menu
-    function myFunction() {
-        notifications.classList.toggle("show");
-        notifications.classList.toggle("hide");
-    }
+    bell.addEventListener( 'click', (e) => {
+      notifications.classList.toggle("show");
+      notifications.classList.toggle("hide");
+     });
+
+    // close the notification menu if user clicks anywhere on the page
+    // window.addEventListener( 'click', (e) => {
+    //   if (e.target !== bell && e.target !== notifications) {
+    //     notifications.classList.remove('show');
+    //     notifications.classList.add('hide');
+    //   }
+    // });
 
     // close individual notifications
     notificationClose.forEach( item => {
